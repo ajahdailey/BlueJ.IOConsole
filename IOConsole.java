@@ -1,4 +1,3 @@
- 
 
 /**
  * @author leon on 03/02/2019.
@@ -39,6 +38,7 @@ public class IOConsole {
      * @param args : optional arguments to send for string formatting
      */
     public void println(String val, Object... args) {
+
     }
 
     /**
@@ -47,7 +47,10 @@ public class IOConsole {
      * @return user's input as String
      */
     public String getStringInput(String prompt, Object... args) {
-        return null;
+
+        out.println("input");
+        String userinput = scanner.next();
+        return userinput;
     }
 
     /**
@@ -56,7 +59,9 @@ public class IOConsole {
      * @return user's input as integer
      */
     public Integer getIntegerInput(String prompt, Object... args) {
-        return null;
+       
+        int usernumber = scanner.nextInt();
+        return usernumber;
     }
 
     /**
@@ -65,7 +70,10 @@ public class IOConsole {
      * @return user's input as double
      */
     public Double getDoubleInput(String prompt, Object... args) {
-        return null;
+        
+        double usernumber = scanner.nextDouble();
+
+        return usernumber;
     }
 
     /**
@@ -74,7 +82,9 @@ public class IOConsole {
      * @return user's input as float
      */
     public Float getFloatInput(String prompt, Object... args) {
-        return null;
+        float usernumber = scanner.nextFloat();
+
+        return usernumber;
     }
 
     /**
@@ -83,6 +93,8 @@ public class IOConsole {
      * @return user's input as long
      */
     public Long getLongInput(String prompt, Object... args) {
-        return null;
+        long usernumber = scanner.nextLong();
+
+        return usernumber;
     }
 }
